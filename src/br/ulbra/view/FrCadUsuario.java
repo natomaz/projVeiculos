@@ -110,9 +110,9 @@ public class FrCadUsuario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Carlito", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("CONTROLE DE USUÁRIOS");
 
@@ -121,43 +121,52 @@ public class FrCadUsuario extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(19, 19, 19))
+                .addGap(23, 23, 23))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 634, -1));
 
+        jLabel2.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel2.setText("CÓDIGO");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
 
         txtid.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 68, 34));
 
+        jLabel3.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel3.setText("NOME");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, -1));
 
         txtNome.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 370, 34));
 
+        jLabel4.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel4.setText("E-MAIL");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
 
         txtEmail.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 470, 34));
 
+        jLabel5.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel5.setText("TIPO");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
 
-        txtTipo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txtTipo.setFont(new java.awt.Font("Carlito", 1, 14)); // NOI18N
         txtTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMINISTRADOR", "USUÁRIO" }));
+        txtTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTipoActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 197, 34));
 
         tbUsuarios.setModel(new javax.swing.table.DefaultTableModel(
@@ -177,13 +186,14 @@ public class FrCadUsuario extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 490, 80));
 
+        jLabel6.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel6.setText("NOME");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
 
         txtPesquisa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(txtPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 400, 280, 34));
 
-        btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/lupa.png"))); // NOI18N
+        btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/lupa.png"))); // NOI18N
         btPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPesquisarActionPerformed(evt);
@@ -191,11 +201,12 @@ public class FrCadUsuario extends javax.swing.JFrame {
         });
         getContentPane().add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 44, 34));
 
+        jLabel7.setFont(new java.awt.Font("Carlito", 0, 14)); // NOI18N
         jLabel7.setText("SENHA");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
 
         btSalvar.setBackground(new java.awt.Color(51, 255, 51));
-        btSalvar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btSalvar.setFont(new java.awt.Font("Carlito", 0, 12)); // NOI18N
         btSalvar.setForeground(new java.awt.Color(255, 255, 255));
         btSalvar.setText("SALVAR");
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +217,7 @@ public class FrCadUsuario extends javax.swing.JFrame {
         getContentPane().add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 100, 34));
 
         btAlterar.setBackground(new java.awt.Color(255, 102, 0));
-        btAlterar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btAlterar.setFont(new java.awt.Font("Carlito", 0, 12)); // NOI18N
         btAlterar.setForeground(new java.awt.Color(255, 255, 255));
         btAlterar.setText("ALTERAR");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +228,7 @@ public class FrCadUsuario extends javax.swing.JFrame {
         getContentPane().add(btAlterar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 100, 34));
 
         btExcluir.setBackground(new java.awt.Color(255, 0, 0));
-        btExcluir.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btExcluir.setFont(new java.awt.Font("Carlito", 0, 12)); // NOI18N
         btExcluir.setForeground(new java.awt.Color(255, 255, 255));
         btExcluir.setText("EXCLUIR");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
@@ -229,6 +240,7 @@ public class FrCadUsuario extends javax.swing.JFrame {
         getContentPane().add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 240, 34));
 
         btNovo.setBackground(new java.awt.Color(0, 153, 255));
+        btNovo.setFont(new java.awt.Font("Carlito", 0, 12)); // NOI18N
         btNovo.setForeground(new java.awt.Color(255, 255, 255));
         btNovo.setText("NOVO");
         btNovo.addActionListener(new java.awt.event.ActionListener() {
@@ -239,6 +251,7 @@ public class FrCadUsuario extends javax.swing.JFrame {
         getContentPane().add(btNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 70, 34));
 
         btLimpar.setBackground(new java.awt.Color(0, 0, 0));
+        btLimpar.setFont(new java.awt.Font("Carlito", 0, 12)); // NOI18N
         btLimpar.setForeground(new java.awt.Color(255, 255, 255));
         btLimpar.setText("LIMPAR");
         btLimpar.addActionListener(new java.awt.event.ActionListener() {
@@ -355,6 +368,10 @@ public class FrCadUsuario extends javax.swing.JFrame {
         limparCampos();
         controlarTela(1);
     }//GEN-LAST:event_btLimparActionPerformed
+
+    private void txtTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTipoActionPerformed
   public void limparCampos(){
             txtid.setText(null);
             txtNome.setText(null);

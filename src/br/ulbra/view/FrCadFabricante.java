@@ -95,7 +95,7 @@ public class FrCadFabricante extends javax.swing.JFrame {
             .addGap(0, 194, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -217,6 +217,7 @@ public class FrCadFabricante extends javax.swing.JFrame {
 
         btnPesquisar.setBackground(new java.awt.Color(255, 255, 255));
         btnPesquisar.setFont(new java.awt.Font("Carlito", 1, 24)); // NOI18N
+        btnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/lupa.png"))); // NOI18N
         btnPesquisar.setText("PESQUISAR");
         btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

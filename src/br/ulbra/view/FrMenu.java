@@ -101,7 +101,6 @@ public class FrMenu extends javax.swing.JFrame {
         jMenu1.add(jMenuItem7);
         jMenu1.add(jSeparator1);
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/exit.png"))); // NOI18N
         jMenuItem5.setText("Sair");
         jMenu1.add(jMenuItem5);
 

@@ -78,7 +78,6 @@ public class FrMenu extends javax.swing.JFrame {
         jMenu1.setBackground(new java.awt.Color(255, 204, 255));
         jMenu1.setText("Cadastros");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/usu.png"))); // NOI18N
         jMenuItem3.setText("Usuários");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +86,6 @@ public class FrMenu extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem3);
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/car1.png"))); // NOI18N
         jMenuItem4.setText("Automóveis");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

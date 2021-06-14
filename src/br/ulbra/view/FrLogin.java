@@ -69,14 +69,14 @@ public class FrLogin extends javax.swing.JFrame {
 
         btLogar.setBackground(new java.awt.Color(255, 255, 255));
         btLogar.setFont(new java.awt.Font("Carlito", 1, 18)); // NOI18N
-        btLogar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/lupa.png"))); // NOI18N
+        btLogar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/login.png"))); // NOI18N
         btLogar.setText("LOGAR");
         btLogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btLogarActionPerformed(evt);
             }
         });
-        jPanel1.add(btLogar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, -1, -1));
+        jPanel1.add(btLogar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Carlito", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

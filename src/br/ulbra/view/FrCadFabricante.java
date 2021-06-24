@@ -13,15 +13,8 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Nana
- */
 public class FrCadFabricante extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FrCadFabricante
-     */
     public FrCadFabricante() throws SQLException {
         initComponents();
         setLocationRelativeTo(null);
